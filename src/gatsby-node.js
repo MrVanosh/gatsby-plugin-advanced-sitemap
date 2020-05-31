@@ -52,7 +52,7 @@ const serializeMarkdownNodes = (node) => {
         throw Error(`\`slug\` is a required field`)
     }
 
-    node.slug = node.fields.slug
+    node.slug = node.fields.slug.value
 
     delete node.fields.slug
 
